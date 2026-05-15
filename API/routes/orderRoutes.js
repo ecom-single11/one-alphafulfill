@@ -6,7 +6,7 @@ const { auth } = require('../middlewares/auth.js');
 router.post('/createOrder', create);
 router.get('/getAllOrders',  auth, getAll);
 router.get('/exportCSV',     auth, exportCSV);
-router.get('/getById/:id',   auth, getById);
+router.get('/getById/:id',   getById);
 router.get('/getByCustomer/:customerId', getByCustomer);
 router.put('/updateStatus/:id', auth, updateStatus);
 
