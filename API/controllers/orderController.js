@@ -68,7 +68,7 @@ async function pushToShipeaso(orderId, order, items) {
 
         payload = {
             order_id:          order.orderNumber,
-            shop_domain:       '',
+            shop_domain:       'one.alphafulfill.online',
             customer_email:    order.guestEmail || order.email || '',
             customer_name:     customerName,
             customer_mobileno: order.contactPhone || '',
